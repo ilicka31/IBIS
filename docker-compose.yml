@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  simulator:
+    build:
+      context: ./simulator
+    container_name: smart_farm_simulator
+    ports:
+      - "5000:5000"
+    networks:
+      - farm_net
+
+  mqtt:
+    build:
+      context: ./mqtt
+    container_name: smart_farm_mqtt
+    ports:
+      - "5001:5001"
+    depends_on:
+      - simulator
+    networks:
+      - farm_net
+
+networks:
+  farm_net:
+    driver: bridge

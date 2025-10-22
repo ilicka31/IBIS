@@ -1,0 +1,4 @@
+update_interval: 5
+temperature_variation: 1.5
+humidity_variation: 2
+soil_moisture_variation: 5
