@@ -1,4 +1,4 @@
-## 🧪 Running the Smart Farm Simulation
+##  Running the Smart Farm Simulation
 
 To run this simulation, you need to have **Docker** installed on your computer.
 
